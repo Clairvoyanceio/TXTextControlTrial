@@ -1,0 +1,23 @@
+<tx-document-viewer width="800px"
+                    height="800px"
+                    serviceURL="https://localhost:5001/"
+                    documentData="SGVsbG8gdGhlcmU="
+                    dock="Fill"
+                    [signatureSettings]="{
+        showSignatureBar: true,
+        signatureBoxName: 'txView',
+        redirectUrlAfterSignature: 'https://localhost:4200',
+        ownerName: 'Paul', signerName: 'Jacob',
+        signerInitials: 'PK' }">
+</tx-document-viewer>
+
+
+
+<div>
+  <button (click)="onClickLoad()" class="btn btn-primary">Load Document</button>
+  <button (click)="onClickSave()" class="btn btn-primary">Save Document</button>
+</div>
+
+<tx-document-editor>
+
+</tx-document-editor>
